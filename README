@@ -1,0 +1,180 @@
+Ben Nappier (ben2113)
+AI (COMS W4701)
+Fall 2013
+Assignment 2: Sokoban Agent Search Algorithms
+Due: 11:59:59 EDT October 22nd 2013 AD
+
+SokobanAgent.java Documentation:
+
+
+Compiling and running:
+	In the terminal, to compile the file, type make in the directory the .java files were unzipped. To run in the terminal type java SokobanAgent. To test run test or script. The test will run many puzzles and place the output into output.txt.
+	
+		make
+		java SokobanAgent
+		test
+
+
+Commands:
+	Enter a puzzle number and a search algorithm
+	eg.
+		sokoin0.txt BFS
+		sokoin2.txt A* q
+	
+	Type puzzles to show all puzzels
+
+		Puzzle sokoin0.txt:
+		########
+		#  . . #
+		#    # #
+		## # # #
+		##  $  #
+		##  $@ #
+		##     #
+		########
+		
+		Puzzle sokoin1.txt:
+		######
+		#  #.#
+		#  # #
+		#. # ####
+		# @    .#
+		#$#     #
+		# #$ $  # 
+		#       # 
+		#########
+		
+		Puzzle sokoin2.txt:
+		########
+		##  ####
+		## * . #
+		# $    #####
+		#   $      #
+		#          #
+		#@ ######  #
+		## ######. #
+		############
+
+	Type algorithms to show all algorithms
+
+		BFS -- Breadth First Search
+		DFS -- Depth First Search
+		UCS -- Uniform Cost Search
+		GBFS Q -- Greedy Best First Solution Search with quick heuristic
+		A* Q -- A* Search with quick heuristic
+		GBFS M -- Greedy Best First Solution Search with Minimized Manhattan heuristic
+		A* M -- A* Search with Minimized Manhattan heuristic
+
+	Type file and then the file name to input any puzzle
+	eg.
+		sokoin3.txt GBFS Q
+
+	Type script to run all Algorithms on all puzzles
+	Puzzles should be valid Sokoban puzzles --closed map, walls all the way around, equal or less targets than boxes, no unreachable targets, and only one player. Some complex large puzzles may consume to much java virtual memory to be solved.
+
+
+Heuristics:
+	Minimized Manhattan Distance Heuristic
+		Minimized Manhattan Distance Heuristic aggregates a minimum distances found between each individual box and each individual target. This value will always be less than the number of moves to solve the puzzle so this heuristic is admissable and thus appropriate for a*.
+	Quick Heuristic (targets left)
+		Quick Heuristic is the number of targets unsolved. Quick because finding the value for the heuristic is quick. This value will always be less than the number of moves to solve the puzzle so this heuristic is admissable and thus appropriate for a*.
+
+Deadlocks:
+	My deadlocks were implemented in validMove. Valid move returns a true if the direction the player is attempting to go is a valid move. A simple is example if the player tile is going to move into a wall tile validMove will return false. The two non-trivials deadlocks implemented are described below: 
+
+		Deadlock 1: If the player pushing a box into a corner
+			
+			In this case the move being checked is a moving right if either one of these walls is here this is a corner and validMove will return false.
+					
+					  # <-- 
+					@$ #
+					  # <--
+
+		Deadlock 2: If the player is going to push a box into a wall that has no targets along the sides of it and next to all along the side tiles the players posion are also walls until a wall is hit
+
+					  ##
+					   #
+					   #
+					@$ # There is no goal along the line of walls
+					   #
+					  ##
+
+	It is true that the second deadlock does include the case of the first deadlock. However, I use both in the case the that move in question is simply pushing a box into a corner than validMove returns false, and the second case, which include two expensive, in terms of time, loops, is not evaluated.
+
+Deadlock Effects:
+
+sokoin2.txt a* m:
+########
+##  ####
+## * . #
+# $    #####
+#   $      #
+#          #
+#@ ######  #
+## ######. #
+############
+
+Testing with no deadlocks implemented:
+-------------------------------------
+Breadth First Search Solution:	
+nodesGenerated: 198611
+prevNodes: 120590
+fringeNodes: 13449
+exploredNodes: 78021
+runTime: 7.871
+edges: u, u, u, r, r, r, l, d, r, r, u, r, d, l, d, r, r, r, u, r, d, d
+cost: 22
+
+A* Search Solution with Minimized Manhattan heuristic:
+nodesGenerated: 60648
+prevNodes: 9669
+fringeNodes: 6141
+exploredNodes: 19363
+runTime: 11.784
+edges: u, u, u, r, r, r, d, r, u, l, l, d, d, r, r, r, r, r, u, r, d, d
+cost: 22
+
+Testing with only deadlock2 implemented:
+---------------------------------------
+Breadth First Search Solution:	
+nodesGenerated: 97372
+prevNodes: 58711
+fringeNodes: 6815
+exploredNodes: 38661
+runTime: 3.874
+edges: u, u, u, r, r, r, l, d, r, r, u, r, d, l, d, r, r, r, u, r, d, d
+cost: 22
+
+A* Search Solution with Minimized Manhattan heuristic:
+nodesGenerated: 33817
+prevNodes: 5248
+fringeNodes: 3302
+exploredNodes: 10954
+runTime: 3.411
+edges: u, u, u, r, r, r, d, r, u, l, l, d, d, r, r, r, r, r, u, r, d, d
+cost: 22
+
+
+Testing with deadlock1 and 2 implemented:
+----------------------------------------
+Breadth First Search Solution:
+nodesGenerated: 83264
+prevNodes: 50152
+fringeNodes: 5745
+exploredNodes: 33112
+runTime: 3.071
+edges: u, u, u, r, r, r, l, d, r, r, u, r, d, l, d, r, r, r, u, r, d, d
+cost: 22
+
+
+A* Search Solution with Minimized Manhattan heuristic:
+nodesGenerated: 29492
+prevNodes: 4522
+fringeNodes: 2757
+exploredNodes: 9631
+runTime: 2.982
+edges: u, u, u, r, r, r, d, r, u, d, l, l, d, r, r, r, r, r, u, r, d, d
+cost: 22
+
+
+The addition of deadlock 1 primarly increased the speed as we would expect. While together greatly decrease the amount of nodes explored.

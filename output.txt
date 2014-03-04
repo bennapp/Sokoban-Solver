@@ -1,0 +1,589 @@
+All Algorithms for puzzle: 1
+##########
+#        #
+#  $  +  #
+#        #
+##########
+
+BFS:nodesGenerated: 151
+prevNodes: 92
+fringeNodes: 10
+exploredNodes: 59
+runTime: 0.053
+edges: l, l, d, l, l, u, r, r, r
+cost: 9
+DFS:nodesGenerated: 162
+prevNodes: 97
+fringeNodes: 11
+exploredNodes: 53
+runTime: 0.027
+edges: u, l, l, l, l, d, r, r, r
+cost: 9
+UCS:nodesGenerated: 215
+prevNodes: 36
+fringeNodes: 8
+exploredNodes: 72
+runTime: 0.053
+edges: l, l, d, l, l, u, r, r, r
+cost: 9
+GBFS w/ q:nodesGenerated: 169
+prevNodes: 105
+fringeNodes: 7
+exploredNodes: 56
+runTime: 0.022
+edges: l, l, d, l, l, u, r, r, r
+cost: 9
+GBFS w/ m:nodesGenerated: 154
+prevNodes: 93
+fringeNodes: 10
+exploredNodes: 50
+runTime: 0.026
+edges: l, l, d, l, l, u, r, r, r
+cost: 9
+A* w/ q:nodesGenerated: 144
+prevNodes: 23
+fringeNodes: 10
+exploredNodes: 47
+runTime: 0.021
+edges: l, u, l, l, l, d, r, r, r
+cost: 9
+A* w/ m:nodesGenerated: 105
+prevNodes: 18
+fringeNodes: 12
+exploredNodes: 34
+runTime: 0.027
+edges: l, l, d, l, l, u, r, r, r
+cost: 9
+
+All Algorithms for puzzle: 2
+####
+#  ####
+# . . #
+# $$#@#
+##    #
+ ######
+
+BFS:nodesGenerated: 228
+prevNodes: 119
+fringeNodes: 6
+exploredNodes: 109
+runTime: 0.006
+edges: d, l, l, u, d, l, u, l, u, u, r, d, r, d, d, l, u
+cost: 17
+DFS:nodesGenerated: 232
+prevNodes: 121
+fringeNodes: 5
+exploredNodes: 105
+runTime: 0.007
+edges: d, l, l, u, d, l, u, l, u, u, r, d, r, d, d, l, u
+cost: 17
+UCS:nodesGenerated: 241
+prevNodes: 14
+fringeNodes: 3
+exploredNodes: 109
+runTime: 0.023
+edges: d, l, l, u, d, l, u, l, u, u, r, d, r, d, d, l, u
+cost: 17
+GBFS w/ q:nodesGenerated: 239
+prevNodes: 127
+fringeNodes: 3
+exploredNodes: 108
+runTime: 0.057
+edges: d, l, l, u, d, l, u, l, u, u, r, d, r, d, d, l, u
+cost: 17
+GBFS w/ m:nodesGenerated: 230
+prevNodes: 120
+fringeNodes: 5
+exploredNodes: 104
+runTime: 0.01
+edges: d, l, l, u, d, l, u, l, u, u, r, d, r, d, d, l, u
+cost: 17
+A* w/ q:nodesGenerated: 219
+prevNodes: 12
+fringeNodes: 7
+exploredNodes: 99
+runTime: 0.041
+edges: d, l, l, u, d, l, u, l, u, u, r, d, r, d, d, l, u
+cost: 17
+A* w/ m:nodesGenerated: 211
+prevNodes: 11
+fringeNodes: 7
+exploredNodes: 95
+runTime: 0.026
+edges: d, l, l, u, d, l, u, l, u, u, r, d, r, d, d, l, u
+cost: 17
+
+All Algorithms for puzzle: 3
+#######
+# .   #
+# #$# #
+# #@# #
+#     #
+#######
+
+BFS:nodesGenerated: 66
+prevNodes: 31
+fringeNodes: 3
+exploredNodes: 35
+runTime: 0.002
+edges: u, d, d, r, r, u, u, u, l, l
+cost: 10
+DFS:nodesGenerated: 66
+prevNodes: 31
+fringeNodes: 2
+exploredNodes: 32
+runTime: 0.002
+edges: u, d, d, r, r, u, u, u, l, l
+cost: 10
+UCS:nodesGenerated: 69
+prevNodes: 1
+fringeNodes: 3
+exploredNodes: 33
+runTime: 0.027
+edges: u, d, d, r, r, u, u, u, l, l
+cost: 10
+GBFS w/ q:nodesGenerated: 71
+prevNodes: 32
+fringeNodes: 4
+exploredNodes: 34
+runTime: 0.005
+edges: u, d, d, r, r, u, u, u, l, l
+cost: 10
+GBFS w/ m:nodesGenerated: 68
+prevNodes: 31
+fringeNodes: 3
+exploredNodes: 33
+runTime: 0.003
+edges: u, d, d, r, r, u, u, u, l, l
+cost: 10
+A* w/ q:nodesGenerated: 64
+prevNodes: 1
+fringeNodes: 2
+exploredNodes: 31
+runTime: 0.021
+edges: u, d, d, r, r, u, u, u, l, l
+cost: 10
+A* w/ m:nodesGenerated: 62
+prevNodes: 1
+fringeNodes: 2
+exploredNodes: 30
+runTime: 0.019
+edges: u, d, d, r, r, u, u, u, l, l
+cost: 10
+
+All Algorithms for puzzle: 4
+########
+#  . . #
+#    # #
+## # # #
+##  $  #
+##  $@ #
+##     #
+########
+
+BFS:nodesGenerated: 7631
+prevNodes: 4738
+fringeNodes: 104
+exploredNodes: 2893
+runTime: 0.463
+edges: l, u, u, u, l, u, r, d, d, d, d, l, d, l, u, u, u, u, l, u, r
+cost: 21
+DFS:nodesGenerated: 7820
+prevNodes: 4860
+fringeNodes: 97
+exploredNodes: 2862
+runTime: 0.38
+edges: l, u, u, u, l, u, r, d, d, d, d, l, d, l, u, u, u, u, l, u, r
+cost: 21
+UCS:nodesGenerated: 8421
+prevNodes: 1127
+fringeNodes: 88
+exploredNodes: 3088
+runTime: 0.422
+edges: l, u, u, u, l, u, r, d, d, d, d, l, d, l, u, u, u, u, l, u, r
+cost: 21
+GBFS w/ q:nodesGenerated: 7896
+prevNodes: 4917
+fringeNodes: 86
+exploredNodes: 2892
+runTime: 0.412
+edges: l, u, u, u, l, u, r, d, d, d, d, l, d, l, u, u, u, u, l, u, r
+cost: 21
+GBFS w/ m:nodesGenerated: 7721
+prevNodes: 4795
+fringeNodes: 101
+exploredNodes: 2824
+runTime: 0.335
+edges: l, u, u, u, l, u, r, d, d, d, d, l, d, l, u, u, u, u, l, u, r
+cost: 21
+A* w/ q:nodesGenerated: 7214
+prevNodes: 987
+fringeNodes: 139
+exploredNodes: 2632
+runTime: 0.632
+edges: l, u, u, u, l, u, r, d, d, d, d, l, d, l, u, u, u, u, l, u, r
+cost: 21
+A* w/ m:nodesGenerated: 5822
+prevNodes: 790
+fringeNodes: 241
+exploredNodes: 2102
+runTime: 0.219
+edges: l, u, u, u, l, u, r, d, d, d, d, l, d, l, u, u, u, u, l, u, r
+cost: 21
+
+All Algorithms for puzzle: 5
+####
+# .#
+#  ###
+#*@  #
+#  $ #
+#  ###
+####
+
+BFS:nodesGenerated: 449
+prevNodes: 255
+fringeNodes: 9
+exploredNodes: 194
+runTime: 0.009
+edges: d, l, u, r, r, r, d, l, u, l, l, d, d, r, u, l, u, r, u, u, l, d, r, d, d, r, r, u, l, d, l, u, u
+cost: 33
+DFS:nodesGenerated: 449
+prevNodes: 255
+fringeNodes: 8
+exploredNodes: 185
+runTime: 0.017
+edges: d, l, u, r, r, r, d, l, u, l, l, d, d, r, u, l, u, r, u, u, l, d, r, d, d, r, r, u, l, d, l, u, u
+cost: 33
+UCS:nodesGenerated: 464
+prevNodes: 43
+fringeNodes: 8
+exploredNodes: 191
+runTime: 0.025
+edges: d, l, u, r, r, r, d, l, u, l, l, d, d, r, u, l, u, r, u, u, l, d, r, d, d, r, r, u, l, d, l, u, u
+cost: 33
+GBFS w/ q:nodesGenerated: 451
+prevNodes: 257
+fringeNodes: 7
+exploredNodes: 186
+runTime: 0.023
+edges: d, l, u, r, r, r, d, l, u, l, l, d, d, r, u, l, u, r, u, u, l, d, r, d, d, r, r, u, l, d, l, u, u
+cost: 33
+GBFS w/ m:nodesGenerated: 451
+prevNodes: 257
+fringeNodes: 7
+exploredNodes: 186
+runTime: 0.009
+edges: d, l, u, r, r, r, d, l, u, l, l, d, d, r, u, l, u, r, u, u, l, d, r, d, d, r, r, u, l, d, l, u, u
+cost: 33
+A* w/ q:nodesGenerated: 443
+prevNodes: 42
+fringeNodes: 5
+exploredNodes: 183
+runTime: 0.043
+edges: d, l, u, r, r, r, d, l, u, l, l, d, d, r, u, l, u, r, u, u, l, d, r, d, d, r, r, u, l, d, l, u, u
+cost: 33
+A* w/ m:nodesGenerated: 443
+prevNodes: 42
+fringeNodes: 5
+exploredNodes: 183
+runTime: 0.06
+edges: d, l, u, r, r, r, d, l, u, l, l, d, d, r, u, l, u, r, u, u, l, d, r, d, d, r, r, u, l, d, l, u, u
+cost: 33
+
+All Algorithms for puzzle: 6
+#####
+#@  ##
+#.$* #
+#  # #
+#    #
+######
+
+BFS:nodesGenerated: 223
+prevNodes: 117
+fringeNodes: 5
+exploredNodes: 106
+runTime: 0.002
+edges: r, d, l, d, d, r, r, r, u, u, l, l, r, r, d, d, l, l, u, d, r, r, u, u, l, u, l, l, d, r, d, d, l, u
+cost: 34
+DFS:nodesGenerated: 234
+prevNodes: 125
+fringeNodes: 1
+exploredNodes: 107
+runTime: 0.003
+edges: r, d, l, d, d, r, r, r, u, u, l, l, r, r, d, d, l, l, u, d, r, r, u, u, l, u, l, l, d, r, d, d, l, u
+cost: 34
+UCS:nodesGenerated: 236
+prevNodes: 12
+fringeNodes: 1
+exploredNodes: 108
+runTime: 0.029
+edges: r, d, l, d, d, r, r, r, u, u, l, l, r, r, d, d, l, l, u, d, r, r, u, u, l, u, l, l, d, r, d, d, l, u
+cost: 34
+GBFS w/ q:nodesGenerated: 230
+prevNodes: 122
+fringeNodes: 2
+exploredNodes: 105
+runTime: 0.025
+edges: r, d, l, d, d, r, r, r, u, u, l, l, r, r, d, d, l, l, u, d, r, r, u, u, l, u, l, l, d, r, d, d, l, u
+cost: 34
+GBFS w/ m:nodesGenerated: 230
+prevNodes: 122
+fringeNodes: 2
+exploredNodes: 105
+runTime: 0.016
+edges: r, d, l, d, d, r, r, r, u, u, l, l, r, r, d, d, l, l, u, d, r, r, u, u, l, u, l, l, d, r, d, d, l, u
+cost: 34
+A* w/ q:nodesGenerated: 225
+prevNodes: 11
+fringeNodes: 4
+exploredNodes: 102
+runTime: 0.01
+edges: r, d, l, d, d, r, r, r, u, u, l, l, r, r, d, d, l, l, u, d, r, r, u, u, l, u, l, l, d, r, d, d, l, u
+cost: 34
+A* w/ m:nodesGenerated: 225
+prevNodes: 11
+fringeNodes: 4
+exploredNodes: 102
+runTime: 0.009
+edges: r, d, l, d, d, r, r, r, u, u, l, l, r, r, d, d, l, l, u, d, r, r, u, u, l, u, l, l, d, r, d, d, l, u
+cost: 34
+
+All Algorithms for puzzle: 7
+######
+#@   ##
+# $$  #
+# #. .#
+#     #
+#######
+
+BFS:nodesGenerated: 287
+prevNodes: 160
+fringeNodes: 11
+exploredNodes: 127
+runTime: 0.003
+edges: r, r, d, u, l, l, d, r, r, u, r, d, r, d, d, l, l, u, r, u, u, l, d
+cost: 23
+DFS:nodesGenerated: 287
+prevNodes: 160
+fringeNodes: 10
+exploredNodes: 116
+runTime: 0.004
+edges: r, r, d, u, l, l, d, r, r, u, r, d, r, d, d, l, l, u, r, u, u, l, d
+cost: 23
+UCS:nodesGenerated: 322
+prevNodes: 28
+fringeNodes: 13
+exploredNodes: 130
+runTime: 0.012
+edges: r, r, d, u, l, l, d, r, r, u, r, d, r, d, d, l, l, u, r, u, u, l, d
+cost: 23
+GBFS w/ q:nodesGenerated: 303
+prevNodes: 171
+fringeNodes: 8
+exploredNodes: 123
+runTime: 0.005
+edges: r, r, d, u, l, l, d, r, r, u, r, d, r, d, d, l, l, u, r, u, u, l, d
+cost: 23
+GBFS w/ m:nodesGenerated: 292
+prevNodes: 163
+fringeNodes: 10
+exploredNodes: 118
+runTime: 0.004
+edges: r, r, d, u, l, l, d, r, r, u, r, d, r, d, d, l, l, u, r, u, u, l, d
+cost: 23
+A* w/ q:nodesGenerated: 262
+prevNodes: 25
+fringeNodes: 9
+exploredNodes: 106
+runTime: 0.011
+edges: r, r, d, u, l, l, d, r, r, u, r, d, r, d, d, l, l, u, r, u, u, l, d
+cost: 23
+A* w/ m:nodesGenerated: 260
+prevNodes: 25
+fringeNodes: 6
+exploredNodes: 106
+runTime: 0.012
+edges: r, r, d, u, l, l, d, r, r, u, r, d, r, d, d, l, l, u, r, u, u, l, d
+cost: 23
+
+All Algorithms for puzzle: 8
+  ####
+###  #
+#@ .$##
+#   $ #
+# #.  #
+#     #
+#######
+
+BFS:nodesGenerated: 861
+prevNodes: 514
+fringeNodes: 12
+exploredNodes: 347
+runTime: 0.031
+edges: d, r, r, d, r, r, u, l, l, u, l, l, d, r, u, r, u, r, d, d, r, d, d, l, l, u, u, r, r, d, l
+cost: 31
+DFS:nodesGenerated: 889
+prevNodes: 529
+fringeNodes: 13
+exploredNodes: 346
+runTime: 0.014
+edges: r, r, d, d, r, r, u, l, l, u, u, r, d, d, u, l, l, l, d, r, l, d, d, r, r, u, u, r, r, d, l
+cost: 31
+UCS:nodesGenerated: 919
+prevNodes: 103
+fringeNodes: 15
+exploredNodes: 357
+runTime: 0.021
+edges: r, r, d, d, r, r, u, l, l, u, u, r, d, d, u, l, l, l, d, r, l, d, d, r, r, u, u, r, r, d, l
+cost: 31
+GBFS w/ q:nodesGenerated: 889
+prevNodes: 528
+fringeNodes: 14
+exploredNodes: 346
+runTime: 0.016
+edges: d, r, r, d, r, r, u, l, l, u, l, l, d, r, u, r, u, r, d, d, r, d, d, l, l, u, u, r, r, d, l
+cost: 31
+GBFS w/ m:nodesGenerated: 889
+prevNodes: 528
+fringeNodes: 14
+exploredNodes: 346
+runTime: 0.014
+edges: d, r, r, d, r, r, u, l, l, u, l, l, d, r, u, r, u, r, d, d, r, d, d, l, l, u, u, r, r, d, l
+cost: 31
+A* w/ q:nodesGenerated: 853
+prevNodes: 93
+fringeNodes: 10
+exploredNodes: 332
+runTime: 0.023
+edges: r, r, d, d, r, r, u, l, l, u, l, l, d, r, u, r, u, r, d, d, r, d, d, l, l, u, u, r, r, d, l
+cost: 31
+A* w/ m:nodesGenerated: 844
+prevNodes: 95
+fringeNodes: 12
+exploredNodes: 328
+runTime: 0.025
+edges: r, r, d, d, r, r, u, l, l, u, u, r, d, d, u, l, l, l, d, r, l, d, d, r, r, u, u, r, r, d, l
+cost: 31
+
+All Algorithms for puzzle: 9
+########
+#      #
+# .**$@#
+#      #
+#####  #
+    ####
+
+BFS:nodesGenerated: 2363
+prevNodes: 1445
+fringeNodes: 15
+exploredNodes: 918
+runTime: 0.036
+edges: u, l, l, d, l, d, r, u, u, r, r, d, l, l, r, r, d, d, l, u, r, u, l
+cost: 23
+DFS:nodesGenerated: 2410
+prevNodes: 1480
+fringeNodes: 6
+exploredNodes: 923
+runTime: 0.038
+edges: u, l, l, d, l, d, r, u, u, r, r, d, l, l, r, r, d, d, l, u, r, u, l
+cost: 23
+UCS:nodesGenerated: 2418
+prevNodes: 281
+fringeNodes: 5
+exploredNodes: 926
+runTime: 0.075
+edges: u, l, l, d, l, d, r, u, u, r, r, d, l, l, r, r, d, d, l, u, r, u, l
+cost: 23
+GBFS w/ q:nodesGenerated: 2395
+prevNodes: 1466
+fringeNodes: 11
+exploredNodes: 917
+runTime: 0.046
+edges: u, l, l, d, l, d, r, u, u, r, r, d, l, l, r, r, d, d, l, u, r, u, l
+cost: 23
+GBFS w/ m:nodesGenerated: 2395
+prevNodes: 1466
+fringeNodes: 11
+exploredNodes: 917
+runTime: 0.033
+edges: u, l, l, d, l, d, r, u, u, r, r, d, l, l, r, r, d, d, l, u, r, u, l
+cost: 23
+A* w/ q:nodesGenerated: 2318
+prevNodes: 268
+fringeNodes: 23
+exploredNodes: 885
+runTime: 0.055
+edges: u, l, l, d, l, d, r, u, u, r, r, d, l, l, r, r, d, d, l, u, r, u, l
+cost: 23
+A* w/ m:nodesGenerated: 2342
+prevNodes: 278
+fringeNodes: 24
+exploredNodes: 893
+runTime: 0.123
+edges: u, l, l, d, l, d, r, u, u, r, r, d, l, l, r, r, d, d, l, u, r, u, l
+cost: 23
+
+All Algorithms for puzzle: 10
+  ######
+  # ..@#
+  # $$ #
+  ## ###
+   # #
+   # #
+#### #
+#    ##
+# #   #
+#   # #
+###   #
+  #####
+
+BFS:nodesGenerated: 4161
+prevNodes: 2313
+fringeNodes: 20
+exploredNodes: 1848
+runTime: 0.114
+edges: l, l, d, d, d, d, d, d, l, d, d, d, r, r, u, u, l, u, u, u, u, u, u, u, r, r, d, l, u, l, d, d, d, d, d, d, l, l, l, d, d, r, r, u, d, l, l, u, u, r, r, d, d, d, r, r, u, u, l, u, u, u, u, u, u, l, u, r, d, d, d, d, d, d, l, l, l, d, d, r, r, u, d, l, l, u, u, r, r, d, r, u, u, u, u, u, u
+cost: 97
+DFS:nodesGenerated: 4196
+prevNodes: 2334
+fringeNodes: 18
+exploredNodes: 1843
+runTime: 0.13
+edges: l, l, d, d, d, d, d, d, l, d, d, d, r, r, u, u, l, u, u, u, u, u, u, u, r, r, d, l, u, l, d, d, d, d, d, d, l, l, l, d, d, r, r, u, d, l, l, u, u, r, r, d, d, d, r, r, u, u, l, u, u, u, u, u, u, l, u, r, d, d, d, d, d, d, d, r, d, d, l, l, u, u, d, l, l, u, u, r, r, d, r, u, u, u, u, u, u
+cost: 97
+UCS:nodesGenerated: 4278
+prevNodes: 314
+fringeNodes: 11
+exploredNodes: 1880
+runTime: 0.126
+edges: l, l, d, d, d, d, d, d, l, d, d, d, r, r, u, u, l, u, u, u, u, u, u, u, r, r, d, l, u, l, d, d, d, d, d, d, l, l, l, d, d, r, r, u, d, l, l, u, u, r, r, d, d, d, r, r, u, u, l, u, u, u, u, u, u, l, u, r, d, d, d, d, d, d, l, l, l, d, d, r, r, u, d, l, l, u, u, r, r, d, r, u, u, u, u, u, u
+cost: 97
+GBFS w/ q:nodesGenerated: 4198
+prevNodes: 2335
+fringeNodes: 18
+exploredNodes: 1844
+runTime: 0.14
+edges: l, l, d, d, d, d, d, d, l, d, d, d, r, r, u, u, l, u, u, u, u, u, u, u, r, r, d, l, u, l, d, d, d, d, d, d, l, l, l, d, d, r, r, u, d, l, l, u, u, r, r, d, d, d, r, r, u, u, l, u, u, u, u, u, u, l, u, r, d, d, d, d, d, d, l, l, l, d, d, r, r, u, d, l, l, u, u, r, r, d, r, u, u, u, u, u, u
+cost: 97
+GBFS w/ m:nodesGenerated: 4179
+prevNodes: 2324
+fringeNodes: 18
+exploredNodes: 1836
+runTime: 0.129
+edges: l, l, d, d, d, d, d, d, l, d, d, d, r, r, u, u, l, u, u, u, u, u, u, u, r, r, d, l, u, l, d, d, d, d, d, d, l, l, l, d, d, r, r, u, d, l, l, u, u, r, r, d, d, d, r, r, u, u, l, u, u, u, u, u, u, l, u, r, d, d, d, d, d, d, l, l, l, d, d, r, r, u, d, l, l, u, u, r, r, d, r, u, u, u, u, u, u
+cost: 97
+A* w/ q:nodesGenerated: 4142
+prevNodes: 302
+fringeNodes: 24
+exploredNodes: 1819
+runTime: 0.146
+edges: l, l, d, d, d, d, d, d, l, d, d, d, r, r, u, u, l, u, u, u, u, u, u, u, r, r, d, l, u, l, d, d, d, d, d, d, l, l, l, d, d, r, r, u, d, l, l, u, u, r, r, d, d, d, r, r, u, u, l, u, u, u, u, u, u, l, u, r, d, d, d, d, d, d, d, r, d, d, l, l, u, u, d, l, l, u, u, r, r, d, r, u, u, u, u, u, u
+cost: 97
+A* w/ m:nodesGenerated: 4016
+prevNodes: 287
+fringeNodes: 41
+exploredNodes: 1761
+runTime: 0.203
+edges: l, l, d, d, d, d, d, d, l, d, d, d, r, r, u, u, l, u, u, u, u, u, u, u, r, r, d, l, u, l, d, d, d, d, d, d, l, l, l, d, d, r, r, u, d, l, l, u, u, r, r, d, d, d, r, r, u, u, l, u, u, u, u, u, u, l, u, r, d, d, d, d, d, d, d, r, d, d, l, l, u, u, d, l, l, u, u, r, r, d, r, u, u, u, u, u, u
+cost: 97
+
